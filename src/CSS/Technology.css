@@ -1,0 +1,10 @@
+.body {
+  background-image: url(../assets/background-technology-mobile.jpg);
+}
+.technology > * {
+  background-size: cover;
+  width: 100%;
+}
+.technology {
+  padding: 400px;
+}

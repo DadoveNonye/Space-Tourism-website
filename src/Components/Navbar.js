@@ -20,7 +20,7 @@ function Navbar() {
       </div>
 
       {showBtn && (
-        <ul>
+        <ul className="navUl">
           <li>DESTINATION</li>
           <li>CREW</li>
           <li>TECHNOLOGY</li>
