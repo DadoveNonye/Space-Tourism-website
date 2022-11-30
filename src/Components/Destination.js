@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 function Destination() {
   return (
-    <div className="body">
+    <div className="body destinationBackground">
       <Navbar />
       <div>
         <h4>

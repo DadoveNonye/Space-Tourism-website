@@ -21,9 +21,18 @@ function Navbar() {
 
       {showBtn && (
         <ul className="navUl">
-          <li>DESTINATION</li>
-          <li>CREW</li>
-          <li>TECHNOLOGY</li>
+          <li>
+            <a href="/">HOME</a>
+          </li>
+          <li>
+            <a href="/destination">DESTINATION</a>
+          </li>
+          <li>
+            <a href="/crew">CREW</a>
+          </li>
+          <li>
+            <a href="/technology">TECHNOLOGY</a>
+          </li>
         </ul>
       )}
     </div>

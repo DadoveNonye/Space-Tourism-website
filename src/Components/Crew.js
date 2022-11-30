@@ -2,10 +2,12 @@ import React from "react";
 import Anousheh from "../assets/image-anousheh-ansari.png";
 import Css from "../CSS/Crew.css";
 import IndexCss from "../CSS/Index.css";
+import Navbar from "./Navbar";
 
 function Crew() {
   return (
-    <div className="body">
+    <div className="body crewBackground">
+      <Navbar />
       <img className="anoushehImage" src={Anousheh} />
       <div className="crewCircle">
         <a className="circle" href=""></a>

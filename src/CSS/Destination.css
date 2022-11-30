@@ -1,4 +1,4 @@
-.body {
+.destinationBackground {
   background-image: url(../assets/background-destination-mobile.jpg);
 }
 .Mars-image {
@@ -31,4 +31,9 @@
 }
 .underline {
   border: 1px solid #919294;
+}
+@media (min-width: 450px) {
+  .destinationBackground {
+    background-image: url(../assets/background-destination-desktop.jpg);
+  }
 }

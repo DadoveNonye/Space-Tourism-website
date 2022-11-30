@@ -27,7 +27,6 @@
   right: 10px;
   color: white;
   background-color: rgb(3, 7, 18);
-  background-color: rgb(red, green, blue);
   height: 25vh;
   transition: ease-in-out 0.5s;
 }
@@ -35,3 +34,11 @@
   list-style: none;
   cursor: pointer;
 }
+.navUl * {
+  text-decoration: none;
+}
+/* @media (max-width: 450px) {
+  .navUl {
+    flex-direction: row;
+  }
+} */

@@ -37,3 +37,9 @@
   color: rgb(3, 7, 18);
   font-weight: bold;
 }
+@media (min-width: 650px) {
+  .HomeBody {
+    background-image: url(../assets/background-home-desktop.jpg);
+    background-color: red;
+  }
+}
