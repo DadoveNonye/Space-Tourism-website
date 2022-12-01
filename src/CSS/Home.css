@@ -1,15 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 .HomeBody {
   background-image: url(../assets/background-home-mobile.jpg);
   background-size: cover;
-  margin: 0;
   font-family: Nunito;
   background-repeat: no-repeat;
+  /* margin: 0; */
   padding: 10px;
   width: 400px;
   margin: 0 auto;
   min-height: 100vh;
   text-align: center;
   color: white;
+}
+.homeText > * {
+  margin: 30px;
 }
 .homeheader {
   font-size: 4rem;
@@ -40,6 +48,41 @@
 @media (min-width: 650px) {
   .HomeBody {
     background-image: url(../assets/background-home-desktop.jpg);
-    background-color: red;
+    width: 100%;
+    max-width: 1300px;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  .HomeBodyText {
+    flex-direction: row;
+  }
+
+  .explore {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+  }
+  .homeText {
+    text-align: left;
+    color: white;
+    width: 30%;
+    margin: 10px auto;
+    position: absolute;
+    top: 68%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: "Roboto", sans-serif;
+  }
+  .homeText > * {
+    margin: 10px;
+  }
+  .homeheader {
+    font-size: 8vw;
+    letter-spacing: 10px;
+    margin: o;
   }
 }
