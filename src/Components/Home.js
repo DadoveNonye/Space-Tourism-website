@@ -2,8 +2,10 @@ import React from "react";
 import HomeCss from "../CSS/Home.css";
 import IndexCss from "../CSS/Index.css";
 import Navbar from "./Navbar";
+import data from "../data";
 
 function Home() {
+  console.log(data.destinations[0].travel);
   return (
     <div className="HomeBody">
       <Navbar />
@@ -19,8 +21,12 @@ function Home() {
           </p>
         </div>
 
-        <div className="explore">
+        {/* <div className="explore">
           <p>EXPLORE</p>
+        </div> */}
+
+        <div className="explore">
+          <div>EXPLORE</div>
         </div>
       </div>
     </div>

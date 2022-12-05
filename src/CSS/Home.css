@@ -28,23 +28,34 @@
   justify-content: space-evenly;
 }
 .explore {
-  padding: 40px;
-  border-radius: 50%;
+  width: 40%;
+  padding: 10px;
+  position: absolute;
+  top: 65%;
+  left: 30%;
+}
+
+.explore:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
   background: white;
-  min-height: 25px;
-  display: inline-block;
-  transform: translateY(-50%);
-  margin: 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.explore div {
+  float: left;
+  width: 100%;
+  padding-top: 50%;
+  line-height: 1em;
+  margin-top: -0.5em;
   text-align: center;
-  color: black;
-  margin-top: 160px;
-  font-size: 1.4rem;
-  font-weight: 200;
-}
-.explore > p {
   color: rgb(3, 7, 18);
-  font-weight: bold;
 }
+
 @media (min-width: 650px) {
   .HomeBody {
     background-image: url(../assets/background-home-desktop.jpg);
@@ -62,9 +73,12 @@
 
   .explore {
     position: absolute;
-    top: 45%;
-    right: 10%;
+    top: 55%;
+    left: 70%;
+    width: 20%;
+    padding: 10px;
   }
+
   .homeText {
     text-align: left;
     color: white;

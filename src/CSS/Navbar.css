@@ -46,6 +46,7 @@
     width: 60%;
     height: 70px;
     right: 0;
+    top: 20px;
     /* display: inline-block; */
   }
   .navUl > li > a {
