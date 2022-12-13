@@ -1,10 +1,9 @@
 import React from "react";
-import DestinationCss from "../CSS/Destination.css";
-import Mars from "../assets/image-mars.png";
-import Navbar from "./Navbar";
+import Titan from "../assets/image-titan.png";
 import data from "../data";
+import Navbar from "../Components/Navbar";
 
-function Destination() {
+function Deuropa() {
   return (
     <div className="body destinationBackground">
       <Navbar />
@@ -14,7 +13,7 @@ function Destination() {
             <span>01</span> PICK YOUR DESTINATION
           </h4>
           <div className="Mars-image">
-            <img width="200px" src={Mars} />
+            <img width="200px" src={Titan} />
           </div>
         </div>
         <div className="second">
@@ -23,29 +22,28 @@ function Destination() {
               <a href="/moon">MOON</a>
             </li>
             <li>
-              <a href="/">MARS</a>
+              <a href="/destination">MARS</a>
             </li>
             <li>
               <a href="/europa">EUROPA</a>
             </li>
             <li>
-              <a href="/titan">TITAN</a>
+              <a href="titan">TITAN</a>
             </li>
           </ul>
-
-          <h1 className="mars">{data.destinations[1].name}</h1>
-          <p className="mars-text">{data.destinations[1].description}</p>
+          <h1 className="mars">{data.destinations[3].name}</h1>
+          <p className="mars-text">{data.destinations[3].description}</p>
           <hr className="underline" />
           <div className="Destination-footer">
             <div>
               <p>AVG. DISTANCE</p>
               <h2 className="destination-distance">
-                {data.destinations[1].distance}
+                {data.destinations[3].distance}
               </h2>
             </div>
             <div>
               <p>ESTIMATED TRAVEL TIME</p>
-              <h2 className="travel-time">{data.destinations[1].travel}</h2>
+              <h2 className="travel-time">{data.destinations[3].travel}</h2>
             </div>
           </div>
         </div>
@@ -54,4 +52,4 @@ function Destination() {
   );
 }
 
-export default Destination;
+export default Deuropa;

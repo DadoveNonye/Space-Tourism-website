@@ -1,11 +1,11 @@
 import React from "react";
-import Anousheh from "../assets/image-anousheh-ansari.png";
+import Mark from "../assets/image-mark-shuttleworth.png";
 import Css from "../CSS/Crew.css";
 import IndexCss from "../CSS/Index.css";
-import Navbar from "./Navbar";
+import Navbar from "../Components/Navbar";
 import data from "../data";
 
-function Crew() {
+function CMark() {
   return (
     <div className="body crewBackground">
       <Navbar />
@@ -14,7 +14,7 @@ function Crew() {
       </h4>
       <div className="crew-content">
         <div className="anoushehImage">
-          <img className="ansari-img" src={Anousheh} />
+          <img className="ansari-img" src={Mark} />
         </div>
 
         <div className="xyz">
@@ -25,9 +25,9 @@ function Crew() {
             <a className="circle" href="/victor"></a>
           </div>
           <div className="textContent">
-            <h4>{data.crew[3].role}</h4>
-            <h1>{data.crew[3].name}</h1>
-            <p>{data.crew[3].bio}</p>
+            <h4>{data.crew[1].role}</h4>
+            <h1>{data.crew[1].name}</h1>
+            <p>{data.crew[1].bio}</p>
           </div>
         </div>
       </div>
@@ -35,4 +35,4 @@ function Crew() {
   );
 }
 
-export default Crew;
+export default CMark;

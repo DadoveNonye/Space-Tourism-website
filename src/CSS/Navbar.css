@@ -1,63 +1,96 @@
-.Navbar {
-  padding-top: 15px;
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
   position: relative;
 }
-.Navbarimages {
-  position: relative;
-  display: flex;
-}
-.logo {
-  margin-right: auto;
-}
-.buttons {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  transition: all ease-in-out 0.5s;
-  cursor: pointer;
-}
-.navUl {
-  width: 30%;
-  text-align: left;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  position: absolute;
-  top: 40px;
-  right: 10px;
-  color: white;
-  background: rgba(242, 240, 235, 0.1);
 
-  /* background-color: rgb(3, 7, 18); */
-  height: 25vh;
-  transition: ease-in-out 0.5s;
+.navbar .rightSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
 }
-.navUl > li {
-  list-style: none;
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
   cursor: pointer;
 }
-.navUl * {
-  text-decoration: none;
-  color: rgba(222, 224, 220, 0.5);
+
+.navbar .rightSide svg {
+  font-size: 40px;
 }
-@media (min-width: 650px) {
-  .navUl {
-    flex-direction: row;
-    width: 60%;
-    height: 70px;
-    right: 0;
-    top: 20px;
-    /* display: inline-block; */
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+.nav {
+  display: flex;
+  background: rgba(242, 240, 235, 0.1);
+  height: 60px;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .rightSide a {
+    width: 60px;
   }
-  .navUl > li > a {
-    padding: 8px;
-    text-align: center;
+}
+
+@media (max-width: 600px) {
+  .navbar .rightSide a {
+    display: block;
+    text-align: left;
   }
-  .navUl > li {
+  .nav {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    /* padding-left: 30px; */
-    /* padding-right: 10px; */
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: rgba(242, 240, 235, 0.1);
+    background: black;
+  }
+  #close {
+    display: none;
+  }
+
+  .navbar .rightSide button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightSide button {
+    display: none;
   }
 }

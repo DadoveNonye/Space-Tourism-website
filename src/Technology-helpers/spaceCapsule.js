@@ -1,11 +1,11 @@
 import React from "react";
-import technologyImageMobile from "../assets/image-launch-vehicle-landscape.jpg";
-import technologyImageDesktop from "../assets/image-launch-vehicle-portrait.jpg";
-import Navbar from "./Navbar";
+import spaceCapsuleImageMobile from "../assets/image-space-capsule-landscape.jpg";
+import spaceCapsuleImageDesktop from "../assets/image-space-capsule-portrait.jpg";
+import Navbar from "../Components/Navbar";
 import data from "../data";
 import technologyCss from "../CSS/Technology.css";
 
-function Technology() {
+function SpaceCapsule() {
   return (
     <div className="body technologyBackground ">
       <Navbar />
@@ -16,11 +16,11 @@ function Technology() {
         <div className="tech-image-div">
           <img
             className="technology-image-mobile"
-            src={technologyImageMobile}
+            src={spaceCapsuleImageMobile}
           />
           <img
             className="technology-image-desktop"
-            src={technologyImageDesktop}
+            src={spaceCapsuleImageDesktop}
           />
         </div>
         <div className="tech-text-content">
@@ -31,8 +31,8 @@ function Technology() {
           </div>
           <div className="tech-text">
             <h4 className="technology">THE TECHNOLOGY...</h4>
-            <h1 className="lau">{data.technology[0].name}</h1>
-            <p>{data.technology[0].description}</p>
+            <h1 className="lau">{data.technology[2].name}</h1>
+            <p>{data.technology[2].description}</p>
           </div>
         </div>
       </div>
@@ -40,4 +40,4 @@ function Technology() {
   );
 }
 
-export default Technology;
+export default SpaceCapsule;
